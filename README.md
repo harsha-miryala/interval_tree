@@ -33,6 +33,6 @@ x[2] y[2] - interval 2
 x[d] y[d] - interval d<br />
 
 In the query operation for searching overlapping interval,<br />
-only one interval which is first available is printed .
+only one interval which overalps with it is printed .
 
 The impementation can also be done using Red black trees or AVL trees  
