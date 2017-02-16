@@ -150,7 +150,7 @@ ITNode *deleteNode(ITNode *root,Interval x)
     if(x.low<root->i->low)
         root->left=deleteNode(root->left,x);
     //if required interval is in right subtree
-    else if(x.low<root->i->low)
+    else if(x.low>root->i->low)
         root->right=deleteNode(root->right,x);
     //if key is same as root's key
     else
