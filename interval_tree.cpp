@@ -73,14 +73,16 @@ bool doOVerlap(Interval i1, Interval i2)
  
 // The main function that searches a given interval i in a given
 // Interval Tree.
-Interval *overlapSearch(ITNode *root, Interval i)
+void overlapSearch(ITNode *root, Interval i)
 {
     // Base Case, tree is empty
-    if (root == NULL) return NULL;
+    if (root == NULL) return ;
  
     // If given interval overlaps with root
     if (doOVerlap(*(root->i), i))
-        return root->i;
+    {
+        cout << "Overlaps with [" << root->i->low << ", " << root->i->high << "]\n";
+    }
  
     // If left child of root is present and max of left child is
     // greater than or equal to given interval, then i may
@@ -221,12 +223,8 @@ int main()
     {
         Interval x;
         cin>>x.low>>x.high;
-        cout << "\nSearching for interval [" << x.low << "," << x.high << "]";
-        Interval *res = overlapSearch(root, x);
-        if (res == NULL)
-            cout << "\nNo Overlapping Interval";
-        else
-            cout << "\nOverlaps with [" << res->low << ", " << res->high << "]\n";
+        cout << "\nSearching for interval [" << x.low << "," << x.high << "]\n";
+        overlapSearch(root, x);
     }  
     //no.of deletions
     int d;
