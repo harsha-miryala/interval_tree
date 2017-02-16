@@ -40,3 +40,10 @@ In delete operation,the interval is deleted and the new <br />
 obtained after updation is printed.
 
 This impementation can also be done using Red black trees or AVL trees  
+
+Note:The delete operation is done only by checking with the low key<br />
+which means that we shld give only one interval with a particular low key<br />
+Changes can be made to the above code to overcome his drawback but for the<br />
+implementation is just for a basic idea.
+
+Thank you :)
