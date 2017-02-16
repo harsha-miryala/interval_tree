@@ -1,0 +1,48 @@
+For example if the input is :
+9
+15 20
+10 30 
+17 19
+5 20
+12 15
+30 40
+3 8
+11 18
+14 20
+2
+14 16
+21 23 
+1 
+10 30
+
+i.e., the nodes are {15,20},{10,30},{17,19},
+{5,20},{12,15},{30,40},{3,8},{11,18},{14,20}
+
+The output is :
+Inorder traversal of constructed Interval Tree is
+[3, 8] max = 8
+[5, 20] max = 20
+[10, 30] max = 30
+[11, 18] max = 18
+[12, 15] max = 20
+[14, 20] max = 20
+[15, 20] max = 40
+[17, 19] max = 40
+[30, 40] max = 40
+
+Searching for interval [14,16]
+Overlaps with [15, 20]
+
+Searching for interval [21,23]
+Overlaps with [10, 30]
+
+Inorder traversal after deleting [10,30] is
+[3, 8] max = 8
+[5, 20] max = 20
+[11, 18] max = 20
+[12, 15] max = 20
+[14, 20] max = 20
+[15, 20] max = 40
+[17, 19] max = 40
+[30, 40] max = 40
+
