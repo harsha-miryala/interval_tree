@@ -32,6 +32,8 @@ Inorder traversal of constructed Interval Tree is
 
 Searching for interval [14,16]
 Overlaps with [15, 20]
+Overlaps with [10, 30]
+Overlaps with [5, 20]
 
 Searching for interval [21,23]
 Overlaps with [10, 30]
@@ -45,4 +47,5 @@ Inorder traversal after deleting [10,30] is
 [15, 20] max = 40
 [17, 19] max = 40
 [30, 40] max = 40
+
 
